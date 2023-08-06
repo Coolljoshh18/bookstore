@@ -1,0 +1,283 @@
+#main {
+ display: none;
+}
+
+#main {
+ position: relative;
+ animation-name: main;
+ animation-duration: 2;
+}
+
+@keyframes main {
+ from {
+  bottom: -1000px;
+  opacity: 0;
+ }
+
+ to {
+  bottom: 0;
+  opacity: 1;
+ }
+}
+
+
+/* loader */
+#loader {
+ position: absolute;
+ top: 30%;
+ right: 20%;
+ left: 20%;
+ z-index: 1;
+ width: 70px;
+ height: 70px;
+ margin: 0 auto 0 auto;
+ border: 10px solid #f3f3f3;
+ border-radius: 50%;
+ border-top: 10px solid #3498db;
+ animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+ 0% {
+  transform: rotate(0deg);
+ }
+
+ 100% {
+  transform: rotate(360deg);
+ }
+}
+
+/* header */
+#topnav {
+ padding: 0;
+ margin: 0;
+ width: 100%;
+ text-align: center;
+ background-color: teal;
+ height: 40px;
+ border-bottom: 1px solid grey;
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 1;
+}
+
+#topnav h2 a {
+ padding: 0;
+ font-family: cursive;
+ text-decoration: none;
+ text-align: center;
+ font-size: 80%;
+ color: black;
+ position: relative;
+ top: -15px;
+}
+
+#topnav #logo {
+ width: 20%;
+ vertical-align: middle;
+ position: absolute;
+ top: 6.5px;
+ left: 10px;
+}
+
+/* header menu */
+#menu {
+ position: absolute;
+ top: 6.5px;
+ right: 10px;
+ border: 1px solid black;
+ border-radius: 30px;
+ width: 50px;
+}
+
+
+#ul {
+ background-color: teal;
+ list-style-type: none;
+ width: 0;
+ height: 100%;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ text-align: center;
+ position: fixed;
+ top: 40px;
+ right: 0;
+ padding: 50px 0 0 0;
+ overflow-x: hidden;
+ transition: 0.2s;
+ font-family: cursive;
+}
+
+#ul a {
+ display: block;
+ padding: 10px 5px 8px 5px;
+ text-decoration: none;
+ color: white;
+}
+
+#ul a:hover {
+ background-color: darkgrey;
+}
+
+#ul #close {
+ text-decoration: none;
+ font-size: 36px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ color: darkgrey;
+ border-top: none;
+ padding-top: 0;
+}
+
+/* this allows the arrow at the bottom of the page to reach the top */
+#topp {
+ height: 40px;
+}
+
+.alert {
+ background-color: teal;
+ font-size: 20px;
+ text-align: center;
+ display: block;
+ padding: 10px 0;
+ font-family: fantasy;
+}
+
+h2 {
+ font-family: fantasy;
+}
+
+.image {
+ height: 100px;
+ width: auto;
+ position: relative;
+ padding: 10px 10px;
+ padding-bottom: 20px;
+ border: 1px solid black;
+}
+
+.image img {
+ height: 100%;
+ width: 100%;
+}
+
+#price {
+ width: 30%;
+ height: 30px;
+ color: white;
+ background-color: darkslategray;
+ opacity: 0;
+ position: absolute;
+ top: 10px;
+ left: 10px;
+ text-align: left;
+ border-bottom-right-radius: 40%;
+ padding: 6px 5px 0 10px;
+ font-family: cursive;
+ font-size: 20px;
+ transition: opacity 1s;
+}
+
+.image:hover #price {
+ opacity: 0.7;
+}
+
+.purchase {
+ display: block;
+ text-align: center;
+ text-decoration: none;
+ background-color: teal;
+ margin: 0 auto 0 auto;
+ padding: 0 4px;
+ color: white;
+ font-family: fantasy;
+ border-radius: 4px;
+}
+
+.top div {
+ display: inline-block;
+}
+
+.top {
+ display: block;
+ white-space: nowrap;
+ overflow-x: scroll;
+ width: 100%
+}
+
+#span {
+ margin-bottom: 20px !important;
+}
+
+@media all and (min-width:420px)and (max-width: 992px) {
+ .image {
+  height: 500px;
+ }
+
+ #topnav {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  background-color: teal;
+  height: 6em;
+  border-bottom: 1px solid grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+ }
+
+ #topnav h2 a {
+  padding: 0;
+  font-family: cursive;
+  text-decoration: none;
+  text-align: center;
+  font-size: 270%;
+  color: black;
+  position: relative;
+  top: -15px;
+ }
+
+ #topnav #logo {
+  width: 18%;
+  vertical-align: middle;
+  position: absolute;
+  top: 6.5px;
+  left: 10px;
+ }
+
+ #menu {
+  position: absolute;
+  top: 6.5px;
+  right: 10px;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 16%;
+ }
+
+ #ul {
+  display: none;
+ }
+
+ #topp {
+  height: 6em;
+ }
+
+ .h2 {
+  font-size: 70px;
+ }
+
+ .alert {
+  background-color: teal;
+  font-size: 40px;
+  text-align: center;
+  display: block;
+ }
+
+ #price {
+  font-size: 70px;
+  height: 100px;
+ }
+}
