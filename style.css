@@ -9,25 +9,6 @@ body {
 
 }
 
-#main {
- position: relative;
- animation-name: main;
- animation-duration: 1s;
- transition: 2s;
-}
-
-@keyframes main {
- from {
-  bottom: -1000px;
-  opacity: 0;
- }
-
- to {
-  bottom: 0;
-  opacity: 1;
- }
-}
-
 :root {
  --color: colorr 2s infinite;
 }
@@ -72,6 +53,24 @@ hr {
 
  100% {
   transform: rotate(360deg);
+ }
+}
+
+#main {
+ position: relative;
+ animation-name: main;
+ animation-duration: 2s;
+}
+
+@keyframes main {
+ from {
+  bottom: -1000px;
+  opacity: 0;
+ }
+
+ to {
+  bottom: 0;
+  opacity: 1;
  }
 }
 
@@ -280,7 +279,7 @@ iframe {
  border-radius: 20px;
  background-color: white;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- height:240px;
+ height: 240px;
 }
 
 
@@ -396,6 +395,19 @@ address a {
  opacity: 0.3;
 }
 
+.recentpage {
+ margin: 0 auto 5px auto;
+ display: block;
+ width: 30%;
+ height: 30px;
+ background-color: teal;
+ border-radius: 10px;
+}
+
+.recentpage a {
+ text-decoration-line: none;
+ color: blanchedalmond;
+}
 
 /* style for landscape */
 /*@media (orientation:landscape) {
