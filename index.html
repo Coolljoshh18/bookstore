@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Divine Faith bookshop</title>
+ <link rel="stylesheet" href="./style.css">
+ </style>
+</head>
+
+<body id="body" onload="loadPage()">
+
+ <div id="loader"></div>
+ <div id="main" style="display:none;">
+  <!--beginning of header-->
+  <nav id="topnav">
+   <a href="index.html"><img src="image.png" alt="Dfb logo" id="logo"></a>
+   <h2><a href="index.html">
+     Divine Faith bookshop</a></h2>
+   <img src="menu.png" alt="" id="menu" onclick="openMenu()">
+   <div id="ul">
+    <a href="javascript:void(0)" onclick="closeMenu()" id="close">-</a>
+    <a href="#about">About Us</a>
+    <a href="#offers">Offers</a>
+    <a href="#recent">Recent Titles</a>
+    <a href="#event">Upcoming Events</a>
+    <a href="#linkhr">Contact</a>
+   </div>
+  </nav>
+  <!--end of header-->
+  <div id="topp"></div>
+  <img src="dfb.png" alt="Divine Faith Bookstore" id="image">
+  <blockquote class="top">
+   "When I was One,I had just begun.<br>
+   When I was Two,I was nearly new.<br>
+   When I was Three,I was hardly me.<br>
+   When I was Four,I was much more."<br>
+   --A. A. Milna..<cite>Now We Are Six</cite>
+  </blockquote>
+  <!--about section-->
+  <hr id="about">
+  <div class="divcontainer">
+   <section class="about">
+    <h1>About Us</h1>
+    <p>Divine Bookstore which officially opened in 2015 is one of the
+     best bookstore in the whole of Lagos state and is ranked number
+     3 among the 50 best bookstore in Lagos.<br>
+    </p>
+   </section>
+   <hr id="offers" class="offers">
+   <section class="offers">
+    <h3>Divine Bookstore offers;</h3>
+    <ul>
+     <li>Free coffee for customers</li>
+     <li>Friendly customer services</li>
+     <li>A well arranged book store for easy reference of various books</li>
+    </ul>
+    <p>Our hours are <strong><time>10am to 9pm</time></strong> weekdays,
+     <strong><time>12pm to 7pm</time></strong> on weekends.
+    </p>
+   </section>
+   <hr id="recent">
+   <nav class="recent">
+    <h2>Recent Titles</span></h2>
+    <ul id="Recenttitles">
+     <li>To Kill a Mockingbird, <a href="#"><cite>Harper Lee</cite></a></li>
+     <li>The Great Gatsby, <a href="#"></a></li>
+     <li>One Hundred Years of Solitude, <a href="#"><cite>Gabriel García Márquez</cite></a></li>
+     <li>The Catcher in the Rye, <a href="#"><cite>J. D. Salinger</cite></a></li>
+     <li>Broken Glass, <a href="#"><cite>Alain Mabanckou</cite>
+      </a>
+     </li>
+     <li>A Little Life, <a href="#"><cite>Hanya Yanagihara</cite></a></li>
+     <li>Chronicles:Volume One, <a><cite>Bob Dylan</cite></a></li>
+     <li>The Tipping Point, <a href=""><cite>Malcolm Gladwell</cite></a></li>
+     <li>Darkmans, <a href=""><cite>Nicola Barker</cite></a></li>
+     <li>The seige, <a href=""><cite>Helen Dunmore</cite></a></li>
+     <li>Light, <a href=""><cite>M John Harrison</cite></a></li>
+    </ul>
+   </nav>
+   <iframe width="90%" height="auto" src="https://www.youtube.com/embed/WqlSalvTd8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="iframe"></iframe>
+   <hr id="event">
+   <section class="events">
+    <h2 id="events">Upcoming Events</h2>
+    <ul id="event">
+     <li><strong>Friday Book Review</strong> by 9am,book review with various people joining from various parts of the state</li>
+     <li><strong>Cleaning the Booksore</strong> Saturday has been dedicated to cleaning the bookstore.Join in the cleaninng and get a free cup of coffee</li>
+     <li><strong>Getting New Books</strong> On Monday by 9am new books will be brought to the bookstore by one of our book suppliers</li>
+     <li><strong>The Children Hour</strong> will take place in the bookstore on Wednesday for Children to checkout the new books and make new friends</li>
+    </ul>
+   </section>
+  </div>
+  <div class="button">
+   <button id="previous">∆</button>
+   <div class="container">
+    <img src="store1.jpg">
+    <img src="store2.jpg">
+    <img src="store3.jpg">
+    <img src="store4.jpg">
+    <img src="store5.jpg">
+   </div>
+   <button id="next">∆</button>
+  </div>
+  <hr id="linkhr">
+  <footer>
+   <address id="link">
+    Last Updated:July 28,2023<br>
+    Web master:Joshua Balogun<br>
+    <a href="mailto:Joshuabalogun0000@gmail.com">Divinefaithbookstore.com</a><br>
+    &copy;Copyright 2023 Divine Faith Bookstore<br>
+   </address>
+  </footer>
+  <h1 class="totop" onclick="totop()"><a href="Javascript:void(0);">«</a></h1>
+ </div>
+ <script defer>
+  var myVar;
+
+  function loadPage() {
+   myVar = setTimeout(showPage, 1000);
+  }
+
+  function showPage() {
+   document.getElementById("loader").style.display = "none";
+   document.getElementById("main").style.display = "block";
+  }
+
+  function openMenu() {
+   document.getElementById("ul").style.width = "50%";
+  }
+
+  function closeMenu() {
+   document.getElementById('ul').style.width = "0";
+  }
+
+  function totop() {
+   window.scrollBy(0, -9000);
+  }
+ </script>
+</body>
+
+</html>
